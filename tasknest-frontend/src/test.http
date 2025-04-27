@@ -1,0 +1,20 @@
+### Register New User
+POST http://127.0.0.1:8000/api/auth/users/
+Content-Type: application/json
+
+{
+  "username": "testuser12",
+  "password": "StrongPassword12"
+    
+}
+
+###
+
+### Login With Registered User
+POST http://127.0.0.1:8000/api/auth/jwt/create/
+Content-Type: application/json
+
+{
+  "username": "testuser12",
+  "password": "StrongPassword12"
+}
